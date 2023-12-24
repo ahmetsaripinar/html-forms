@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html - Forms Weekly</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="row py-4 d-flex flex-column align-items-center bg-light">
+      <form
+        action="https://formsubmit.co/kral.fantastik@gmail.com"
+        method="POST"
+        class="d-flex flex-column col-lg-4 col-7 py-4 row-gap-2"
+      >
+        <div class="mb-2 form-floating">
+            <input
+            type="name"
+            class="form-control"
+            id="nameInput"
+            name="nameInput"
+            aria-describedby="emailHelp"
+            required
+          />
+          <label for="name">İsim</label>
+        </div>
+        <div class="mb-2 form-floating">
+            <input
+            type="lastname"
+            class="form-control"
+            id="lastnameInput"
+            name="lastnameInput"
+            aria-describedby="emailHelp"
+            required
+          />
+          <label for="lastnameInput">Soyisim</label>
+        </div>
+        <div class="mb-2 form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="emailInput"
+              name="emailInput"
+              aria-describedby="emailHelp"
+              required
+            />
+            <label for="emailInput">Mail Adresiniz</label>
+          </div>
+          <div class="mb-2 form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="ageInput"
+              name="ageInput"
+              aria-describedby="emailHelp"
+             min="15" max="70"
+             required
+            />
+            <label for="ageInput">Yaşınız</label>
+          </div>
+          <div class="mb-2 form-floating">
+           <textarea class="form-control"
+            id="textarea" 
+            row="4"
+            cols="1"
+            maxlength="199"
+            name="textarea"
+            style="height:8em;">
+           </textarea>
+           <label for="textarea">Mesajınız</label>
+          </div>
+          <label for="likeRange">Sayfamızı ne kadar beğendiniz? (0-5) </label>
+          <div class="mb-2">
+            <input type="range" id="likeRange" name="likeRange" min="0" max="5" value="1" class="form-range">
+          </div>
+          <button class="btn btn-primary btn-large btn-submit mx-auto" style="width: 105px;" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
